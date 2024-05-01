@@ -4,7 +4,7 @@
 
 ## Kaip naudotis programa?
 
-1. **Paleidimas**: Paleiskite programą, vykdant kodą `python darbo_kalendorius.py`.
+1. **Paleidimas**: Paleiskite programą, vykdant kodą `kalendorius.py`.
 
 2. **Įrašų valdymas**: Programoje galite pridėti naujų įrašų, juos redaguoti, ištrinti arba peržiūrėti visus esamus įrašus.
 
