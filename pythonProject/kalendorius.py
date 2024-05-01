@@ -14,11 +14,14 @@ class DatabaseApp:
         self.create_widgets()
 
         self.conn = sqlite3.connect("duomenys.db")
-        self.cur.execute('''CREATE TABLE IF NOT EXISTS data id INTEGER PRIMARY KEY, title TEXT, description TEXT, 
+        self.cur = self.conn.cursor()
+        self.cur.execute('''CREATE TABLE IF NOT EXISTS data (id INTEGER PRIMARY KEY, title TEXT, description TEXT, 
         date TEXT, hour INTEGER)''')
         self.conn.commit()
         self.load_data()
 
+    def create_widgets(self):
+        self.description_text = tk.Text(self.root, width=30, height=5, bg="#ffd280")
 
 root = tk.Tk()
 app = DatabaseApp(root)
